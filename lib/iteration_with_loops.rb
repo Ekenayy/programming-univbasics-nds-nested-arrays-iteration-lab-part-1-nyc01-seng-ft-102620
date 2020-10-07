@@ -7,6 +7,7 @@ def find_even_values(src)
 while row_index < spice_rack.count do
   element_index = 0
   while element_index < spice_rack[row_index].count do
+   if spice_rack[row_index][element_index].even? 
     p spice_rack[row_index][element_index]
     element_index += 1
   end
